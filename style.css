@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid ; */
+}
+
+:root {
+    --bg-color: #f0f2f5;
+    --color-1: #fff;
+    --color-2: #f5f6f7;
+    --color-3:#42b72a;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 150vh;
+    align-items: center;
+    background: var(--bg-color);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    width: 90%;
+    gap: 1.5rem;
+}
+.title-img{
+    width: calc(50%);
+}
+
+
+.Title img {
+    margin: 20px 0 0 -45px;
+    width: 25rem;
+}
+
+.Title p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: start;
+}
+
+.signUp-card {
+    width: calc(50% - 15px);
+    background: var(--color-1);
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px 5px #5555553c;
+    padding: 15px;
+}
+.Signup-title{
+    text-align: center;
+}
+.Signup-title h2 {
+    font-size: 2rem;
+    margin: 0 0 5px 0;
+}
+
+.signUp-card hr {
+    margin: 20px 0;
+}
+
+.postion-1 input {
+    height: 40px;
+    background: var(--color-2);
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 100%;
+    padding: 8px;
+    outline: none;
+}
+
+.postion-1 input:nth-child(1),
+.postion-1 input:nth-child(2) {
+    width: calc(50% - 3px);
+}
+
+.date-box select{
+    width: 30%;
+    padding: 2%;
+    margin: 1%;
+    outline: none;
+}
+.genders-radio {
+    display: flex;
+    justify-content: space-between;
+}
+#gender{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.genders-radio .ops {
+    border: 2px solid silver;
+    width: 30%;
+    border-radius: 5px;
+    padding: 7px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.postion-2>* {
+    margin: 5px 0;
+}
+
+.Trem {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.Trem p {
+    font-size: 0.7rem;
+}
+
+.Trem p span {
+    color: rgb(0, 0, 151);
+}
+
+.Trem p span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.signUp-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.signUp-btn button{
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: 550;
+    border-radius: 5px;
+    width: 60%;
+    outline: none;
+    border: none;
+    color: var(--color-1);
+    background: var(--color-3);
+}
+.signUp-btn button:hover{
+    background: #30911c;
+}
+
+@media screen and (max-width: 1000px) {
+    body{
+        height: calc(100% + 100px);
+    }
+    .signUp-card , .Title{
+        width: 70%;
+    }
+
+}
